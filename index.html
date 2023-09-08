@@ -43,8 +43,8 @@
                 font-size: 25px;
                 font-weight: bold;
                 border:solid #81DAF5;
-                margin-left: 18px;
-                margin-right: 19px;
+                margin-left: 19px;
+                margin-right: 17px;
                 border-radius: 5px;                
             }  
             .box4{
@@ -104,6 +104,26 @@
             #projects{
                 height:750px;
             }
+            .underline-effect {
+                position: relative;
+                text-decoration: none;
+                color: #2d2d9f;
+                font-size: 18px;
+                overflow: hidden;
+            }
+            .underline-effect::before {
+                content: "";
+                position: absolute;
+                width: 0;
+                height: 2px;
+                background-color: #2d2d9f;
+                bottom: -2px;
+                left: 50%;
+                transform: translateX(-50%);
+                transition: width 0.3s ease-in-out;
+                color: blue;}
+            .underline-effect:hover::before {
+                width: 75%;}       
         </style>
     </head>
     <body>        
@@ -112,28 +132,28 @@
         </div>
 
         <div class="box3">            
-            <button class="box1" type="button"  onclick="window.scrollTo(0, document.getElementById('profile').offsetTop)">PROFILE</button>
-            <button class="box1" type="button"  onclick="window.scrollTo(0, document.getElementById('skills').offsetTop)">SKILLS</button>
-            <button class="box1" type="button"  onclick="window.scrollTo(0, document.getElementById('skills').offsetTop)">PRIZE & ACTIVITY</button>
-            <button class="box1" type="button"  onclick="window.scrollTo(0, document.getElementById('projects').offsetTop)">PROJECTS</button>
-            <button class="box1" type="button"  onclick="window.scrollTo(0, document.getElementById('contact').offsetTop)">CONTACT</button>             
+            <span class="underline-effect"><button class="box1" type="button"  onclick="window.scrollTo(0, document.getElementById('profile').offsetTop)">PROFILE</button></span>
+            <span class="underline-effect"><button class="box1" type="button"  onclick="window.scrollTo(0, document.getElementById('skills').offsetTop)">SKILLS</button></span>
+            <span class="underline-effect"><button class="box1" type="button"  onclick="window.scrollTo(0, document.getElementById('skills').offsetTop)">PRIZE & ACTIVITY</button></span>
+            <span class="underline-effect"><button class="box1" type="button"  onclick="window.scrollTo(0, document.getElementById('projects').offsetTop)">PROJECTS</button></span>
+            <span class="underline-effect"><button class="box1" type="button"  onclick="window.scrollTo(0, document.getElementById('contact').offsetTop)">CONTACT</button></span>          
             
         </div><br>        
 
         <div class="box2" id="profile">
             <h2><span class="p3">&nbsp;PROFILE&nbsp;</span></h2>
             <hr>
-            <img src="극락조.jpg" alt="내사진">
+            <!-- <img src="극락조.jpg" alt="내사진"> -->
             <span class="p1">Name</span><br>
             <span class="p2">Won Jong Ho</span><br>
             <br><br>
             <span class="p1">Education</span><br>
-            <span class="p2">· 00Univ.Major of Nano-Semiconductor Engineering</span><span id="date">2012-2019</span><br>
+            <span class="p2">· Korea Maritime & Ocean Univ.Major of Nano-Semiconductor Engineering</span><span id="date">2012-2019</span><br>
             <span class="p2">· 데이터 분석을 위한 AI 응용소프트웨어 개발 교육</span><span id="date">2023.03-2023.09</span><br>
             <br><br>
-            <span class="p1">Certificate</span><br>
+            <!-- <span class="p1">Certificate</span><br>
             <span class="p2">· 딴 것</span><span id="date">2019</span><br>            
-            <span class="p2">· 딸 듯</span><span id="date">2023</span><br>
+            <span class="p2">· 딸 듯</span><span id="date">2023</span><br> -->
         </div><br>
 
         <div class="box2" id="skills">
@@ -167,7 +187,7 @@
             <hr>
             <div id="div1">
                 <div id="div3">
-                    <img src="pooh.jpg">
+                    <img src="dash_board.jpg">
                     <span class="p1">DashBoard</span><br><br>
                     <span class="p2">· Python 3, Html 5, php, MariaDB 사용하여</span><br>
                     <span class="p2">&nbsp; 생성된 데이터 분류 하고 현황판으로 출력</span><br>
@@ -176,16 +196,23 @@
                     <span></span><br>
                     <span></span><br>
                     <span></span><br>
-                    <span></span><br>
-                   
+                    <span></span><br>                   
                     <button class="box4"><a href='solproject_01.html'>View Details</a></button>  
                 </div>                
             </div>
             <div id="div1">
                 <div id="div3">
                     <img src="pooh2.jpg">
-                    <span class="p1">AI</span><br><br>
+                    <span class="p1"> 데이터 분석 및 머신 러닝 모델 구축</span><br><br>
                     <span class="p2">·8월 예정</span><br>
+                    <span></span><br>
+                    <span></span><br>
+                    <span></span><br>
+                    <span></span><br>
+                    <span></span><br>
+                    <span></span><br> 
+                    <span></span><br>                   
+                    <button class="box4"><a href='solproject_02.html'>View Details</a></button>
                 </div><br> 
             </div>
         </div><br>
@@ -197,7 +224,7 @@
             <div id="div2"><img id='mail' src="mail.jpg">
                 <span class="p1">xobic0116@naver.com</span></div>
             <div id="div2"><img id='mail' src="phone.jpg">
-                <span class="p1">010-0116-1993</span></div>
+                <span class="p1">010-2754-9231</span></div>
             </div>
             <div id="div1">
                 <div id="div2"><a href="https://blog.naver.com/xobic0116">
@@ -207,5 +234,6 @@
             </div>
         </div>
     </body>
+</html>
 </html>
     
